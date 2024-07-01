@@ -192,6 +192,13 @@ import { store } from '../store.js'
 											:label-outside="true"
 											placeholder="***" />
 									</td>
+									<td>Cluster name</td>
+									<td>
+										<NcTextField id="mongodbCluster"
+											 :value.sync="configuration.mongodbCluster"
+											 :label-outside="true"
+											 placeholder="***" />
+									</td>
 								</tr>
 							</tbody>
 						</table>
@@ -313,6 +320,7 @@ export default {
 				elasticKey: '',
 				mongodbLocation: '',
 				mongodbKey: '',
+				mongodbCluster: '',
 				organisationName: '',
 				organisationOin: '',
 				organisationPki: '',
